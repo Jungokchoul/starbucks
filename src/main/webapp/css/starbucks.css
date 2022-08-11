@@ -31,7 +31,7 @@ header {
 .nav-top {
 	margin: 1rem 0;
 }
-.nav-top, nav-bottom {
+.nav-top, .nav-bottom {
 	display: flex;
 }
 .nav-top a {
@@ -54,13 +54,13 @@ header {
 .nav-top li:nth-child(5)::after{
 	width: 0;
 }
-nav-bottom li:hover {
+.nav-bottom li:hover {
 	background: #3a3a3a;
-	color: yellowgreen;;
+	color: black;
 	text-decoration: underline;
 	height: 80px;
 }
-nav-bottom li::hover{
+.nav-bottom li::hover{
 	text-transform: uppercase;
 }
 .nav-bottom a{
@@ -69,7 +69,67 @@ nav-bottom li::hover{
 	margin: .2rem 0 0 0;
 	display: block;
 }
-
+.post-it {
+	position: fixed;
+	width: 140px;;
+	height: 214px;;
+	top: 200px;
+	right: 5%;
+}
+.beverage {
+	display: flex;
+	height: 650px;
+	justify-content: center;
+	column-gap: 2rem;
+}
+.promotion {
+	position: relative;
+}
+.bl {
+	align-self: center;
+}
+.more {
+	border: 1px solid white;
+	border-radius: 3px;
+	color: white;
+	width: 40%;
+	margin: 2rem auto;
+	text-align: center;
+	padding: .5rem;
+	transiton: all .3s ease-in-out;
+	font-size: .725rem;
+}
+.more:hover {
+	background: white;
+	color: yellowgreen;
+	text-decoration: underline;
+}
+.b2 {
+	margin-top: 3rem;
+}
+.b3 {
+	align-self: center;
+}
+.b4 {
+	padding: 1px;
+}
+.promo-bg {
+	display: flex;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	z-index: -1;;
+	width: 100%;
+	
+}
+.left-bg {
+	background: yellowgreen;
+	flex: 5.5;
+}
+.right-bg {
+	background: skyblue;
+	flex: 4.5;
+}
 
 
 
