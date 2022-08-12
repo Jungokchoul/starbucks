@@ -1,17 +1,17 @@
 @charset "UTF-8";
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
+body {
 	color: #333;
 }
-ul{
-	list-style-type: none;
+ul {
+	list-style: none;
 }
 a, a:link {
 	text-decoration: none;
-	
+	color: inherit;
 }
 header {
 	border-top: 2px solid black;
@@ -19,13 +19,14 @@ header {
 	overflow: hidden;
 }
 .wrap {
-	max-width: 1050px;	
+	max-width: 1050px;
 	margin: 0 auto;
 	padding: 1rem 0;
 	display: flex;
-	/* justify-content: space-between; */
+	/* justify-content: space-between */
+	
 }
-.site-nav{
+.site-nav {
 	margin-left: auto;
 }
 .nav-top {
@@ -37,55 +38,71 @@ header {
 .nav-top a {
 	text-transform: capitalize;
 }
-.nav-top a:hover{
-	text-decoration: underline;
+.nav-top a:hover {
+	text-decoration: underline
 }
-.nav-top li::after{
+.nav-top li::after {
 	content: '';
 	display: inline-block;
 	width: 1px;
 	height: 50%;
 	background: #ccc;
-	margin: 0 .925rem;
+	margin: 0 .925rem
 }
-.nav-top li:nth-child(4)::after{
-	width: 0;
+.nav-top li:nth-child(4)::after {
+	width: 0; 
 }
-.nav-top li:nth-child(5)::after{
-	width: 0;
+.nav-top li:nth-child(5)::after {
+	width: 0; 
 }
+
+.nav-top li:nth-last-child(1) {
+	position: relative;
+}
+
+/* 검색창, 검색버튼 */
+[type=search] {
+	width: 30px;
+	height: 30px;
+}
+[type=image] {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+
 .nav-bottom li:hover {
 	background: #3a3a3a;
-	color: black;
+	color: yellowgreen;
 	text-decoration: underline;
 	height: 80px;
 }
-.nav-bottom li::hover{
-	text-transform: uppercase;
-}
-.nav-bottom a{
+.nav-bottom a {
 	text-transform: uppercase;
 	padding: .5rem 1rem;
 	margin: .2rem 0 0 0;
 	display: block;
 }
+
 .post-it {
 	position: fixed;
-	width: 140px;;
-	height: 214px;;
+	width: 140px;
+	height: 214px;
 	top: 200px;
 	right: 5%;
 }
+
+.promotion {
+	position: relative;	
+}
 .beverage {
 	display: flex;
-	height: 650px;
+	height: 650px; /* 나중에 50px은 따로 사용예정 */
 	justify-content: center;
 	column-gap: 2rem;
 }
-.promotion {
-	position: relative;
-}
-.bl {
+.b1 {
 	align-self: center;
 }
 .more {
@@ -96,13 +113,13 @@ header {
 	margin: 2rem auto;
 	text-align: center;
 	padding: .5rem;
-	transiton: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 	font-size: .725rem;
 }
 .more:hover {
 	background: white;
 	color: yellowgreen;
-	text-decoration: underline;
+	text-decoration: underline;	
 }
 .b2 {
 	margin-top: 3rem;
@@ -111,24 +128,63 @@ header {
 	align-self: center;
 }
 .b4 {
-	padding: 1px;
+	padding-top: 3rem;
 }
 .promo-bg {
 	display: flex;
-	height: 700px;
+	height: 700px;	
 	position: absolute;
 	top: 0;
-	z-index: -1;;
+	z-index: -1;
 	width: 100%;
-	
 }
 .left-bg {
 	background: yellowgreen;
-	flex: 5.5;
+	flex: 5.5
 }
 .right-bg {
 	background: skyblue;
+	flex: 4.5
+}
+
+.notice {
+	display: flex;
+	height: 50px;
+	overflow: hidden; /* 나중에 다시 수정 */
+}
+.news-area {
+	flex: 5.5;
+	background: #000;
+	color: white;
+}
+.area-items {
+	display: flex;
+	float: right;
+}
+.area-items h2 {
+	font-size: 1rem;
+}
+.area-items ul {
+	overflow: hidden;
+}
+.area-items ul li {
+	margin: 30px 0;
+}
+.area-items button {
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	color: #ccc;
+}
+.promo-area {
 	flex: 4.5;
+	background: #f2f2f2;	
+}
+.promo-items {
+	display: flex;
+	float: left;
 }
 
 
