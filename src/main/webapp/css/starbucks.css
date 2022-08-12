@@ -3,7 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {font-size :20px;}
 body{
+	font-size: 1rem;
 	color: #333;
 }
 ul{
@@ -11,7 +13,7 @@ ul{
 }
 a, a:link {
 	text-decoration: none;
-	
+	color: inherit;
 }
 header {
 	border-top: 2px solid black;
@@ -113,6 +115,35 @@ header {
 .b4 {
 	padding: 1px;
 }
+.area-items {
+	display:  flex;
+	align-items: center;
+	float: right;
+}
+.area-items h2 {
+	font-size: 1rem;
+}
+.area-items ul{
+	margin: 0 0 0 1rem;
+	height: 50px;
+	overflow: hidden;
+}
+.area-items ul{
+	
+}
+.area-items button {
+	font-size: 1.250rem;;
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius:50%;
+	color: #ccc;
+	
+}
+.area-items il li {
+	margin: 15px 0;
+}
 .promo-bg {
 	display: flex;
 	height: 700px;
@@ -130,8 +161,127 @@ header {
 	background: skyblue;
 	flex: 4.5;
 }
+.promo-items {
+	display: flex;
+	height: 50px;
+	align-items:  center;
+	margin: 0 0 0 5rem;
+	float: left;
+}
+.promo-items h2 {
+	font-size: 1rem;
+}
+.promo-items button {
+	border: 0;
+	background: n;
+	width: 30px;
+	height: 30px;
+	margin: 0 0 0;
+}
+.benefit {
+	background: #17634c; /* cadet blue */
+	color: white;
+	font-size: .875rem;
+}
+.benefit .wrap {
+	column-gap: 1.8rem;
+}
+.reward-logo {
+	flex: 1;
+}
+.membership {
+	position: relative;
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.membership p {
+	letter-spacing: -1px;
+}
+.membership p:nth-child(1){
+	margin-bottom: 1rem;
+	
+}
+.membership p:nth-child(2){
+	font-size: .875rem;
+	
+}
+.membership p:nth-child(3){
+	font-size: .875rem;
+}
+.btns {
+	display :flex;
+	position: absolute;
+	right: 0;
+	bottom: 1rem;
+}
+.btns li:nth-child(1) a {
+	color: White;
+	background: 2px solid cadetblue;
+	font-size: .725rem;
+	padding: .6rem 1rem;
+}
+.btns li:nth-child(2) a {
+	color: White;
+	border : 2px solid white;
+	font-size: .725rem;
+	padding: .6rem 1rem;
+	border-radius: .15rem;
+}
+.giftcard {
+	position: relative;
+}
+.giftcard  p {
+	font-size: .7rem;
+	letter-spacing: -1px;
+}
+.gift-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.gift-button a {
+	color: White;
+	border : 2px solid white;
+	font-size: .725rem;
+	padding: .6rem 1.735rem;
+	border-radius: .15rem;
+}
 
-
+.new-beans {
+	padding: 3rem 0;
+	background: url("../images/2022_Summer2_bean_bg.jpg") no-repeat center / cover;
+}
+.new-beans .wrap {
+	justify-content: space-between;
+}
+.beans-text {
+	color: white;
+	margin:  0 1rem 0 0;
+	letter-spacing: -1px;
+}
+.beans-text p:nth-child(1) {
+	font-size: .625rem;;
+	color: #f3f3f3;
+}
+.beans-text p:nth-child(2) {
+	font-size: 1.250rem;;
+	color: #fff;
+}
+.beans-text p:nth-child(3) {
+	font-size: .825rem;;
+	color: #efefef;
+}
+.beans-text .more { /* p.more vs p. more */
+	margin: 1rem 0;
+}
+.beans-text .more hover{
+	
+}
+@media screen and (max-width:480px) {
+	html{font-size: 16px;}
+	
+}
 
 
 

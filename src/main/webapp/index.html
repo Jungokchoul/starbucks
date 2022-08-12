@@ -1,175 +1,133 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <title>스타벅스 클론</title>
 <link rel="stylesheet" href="css/starbucks.css" />
 </head>
 <body>
 	<div class="post-it">
-		<a href="#"><img src="images/53JuZ1_20220728180505638.png" alt="고객 사과문"/></a>
-		<a href=""></a>
+		<a href="#">
+			<img src="images/53JuZ1_20220728180505638.png" alt="고객 사과문">
+		</a>
 	</div>
 	<header>
 		<div class="wrap">
 			<div class="site-logo">
-				<a href="#"> <img src="images/logo.png" alt="스타벅스" />
+				<a href="#"> <img src="images/logo.png" alt="스타벅스">
 				</a>
 			</div>
 			<div class="site-nav">
 				<ul class="nav-top">
-					<li><a href="#">Sign In</a></li>
-					<li><a href="#">My Starbucks</a></li>
-					<li><a href="#">Customer Service &amp; Ideas</a></li>
-					<li><a href="#">Find a Store</a></li>
-					<li><input type="search" id="search_keyword"> <input
-						type="image" src="images/icon_magnifier_black.png"></li>
+					<li><a href="#">sign in</a></li>
+					<li><a href="#">my starbucks</a></li>
+					<li><a href="#">customer service &amp; ideas</a></li>
+					<li><a href="#">find a store</a></li>
+					<li>
+						<input type="search" id="search_keyword"> 
+						<input type="image" src="images/icon_magnifier_black.png">
+					</li>
 				</ul>
 				<ul class="nav-bottom">
-					<li><a href="#">COFFEE</a></li>
-					<li><a href="#">MENU</a></li>
-					<li><a href="#">STORE</a></li>
-					<li><a href="#">RESPONSIBILITY</a></li>
-					<li><a href="#">STARBUCKS REWARDS</a></li>
-					<li><a href="#">WHAT'S NEW</a></li>
+					<li><a href="#">coffee</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">store</a></li>
+					<li><a href="#">responsibility</a></li>
+					<li><a href="#">starbucks rewards</a></li>
+					<li><a href="#">what new</a></li>
 				</ul>
 			</div>
 		</div>
-		<!--/. wrap -->
+		<!-- /.wrap -->
 	</header>
-	<section class="promotion">
+	<section class="promotion">		
 		<div class="beverage">
-			<div class-"b1">
+			<div class="b1">
 				<img src="images/2022_Summer2_main_title.png" alt="">
-				<p>
+				<p class="more">
 					<a href="#">자세히 보기</a>
 				</p>
 			</div>
+			<div class="b2">
+				<img src="images/2022_Summer2_main_drink_01.png" alt="cool summer chamomile blended">
+			</div>
+			<div class="b3">
+				<img src="images/2022_Summer2_main_drink_02.png" alt="mugwort cream frappuccino with cold brew">
+			</div>
+			<div class="b4">
+				<img src="images/2022_Summer2_main_drink_03.png" alt="jeju green tangerine  limade">
+			</div>
 		</div>
-		<div class-"b2">
-			<img src="images/2022_Summer2_main_drink_03.png" alt="쿨 서머"/>
-		</div>
-		<div class-"b3">
-			<img src="images/2022_Summer2_main_drink_02.png" alt="쑥"/>
-		</div>
-		<div class-"b4">
-			<img src="images/2022_Summer2_main_drink_01.png" alt="에이드"/>
-		</div>
-	</div>
 		<div class="promo-bg">
-		<div class="left-bg"></div>
-		<div class="right-bg"></div>
-	</div>
-		<div class="news-area">
-			<h2>공지사항</h2>
-			<ul>
-				<li><a href="#">시스템 개선 및 점검안내</a></li>
-				<li><a href="#">시스템 개선 및 점검안내</a></li>
-				<li><a href="#">시스템 개선 및 점검안내</a></li>
-				<li><a href="#">시스템 개선 및 점검안내</a></li>
-				<li><a href="#">개인정보처리방침 / 위치정보 이용약관 개정 안내</a></li>
-			</ul>
-			<button>&plus;</button>
+			<div class="left-bg"></div>
+			<div class="right-bg"></div>
 		</div>
-		<div class="promo-area">
-			<h2>스타벅스 프로모션</h2>
-			<button>&carrot;</button>
+		
+		<div class="notice">
+			<div class="news-area">
+				<div class="area-items">
+					<h2>공지사항</h2>
+					<ul>
+						<li><a href="#">시스템 개선 및 점검안내</a></li>
+						<li><a href="#">시스템 개선 및 점검안내</a></li>
+						<li><a href="#">시스템 개선 및 점검안내</a></li>
+						<li><a href="#">시스템 개선 및 점검안내</a></li>
+						<li><a href="#">개인정보처리방침/위치정보 이용약관 개정안내</a></li>
+					</ul>
+					<button>&plus;</button>
+				</div>
+			</div>
+			<div class="promo-area">
+				<div class="promo-items">
+					<h2>스타벅스 프로모션</h2>
+					<button><img src="images/btn_prom_down.png" alt="더보기"></button>
+				</div>
+			</div>			
 		</div>
-
-		<div class="promo-area"></div>
+		
 	</section>
+	<section class="benefit">
+		<div class="wrap">
+			<div>
+				<img src="images/rewards-logo.png" alt="스타벅스 리워드">
+			</div>
+			<div class="reward-details">
+				<div>
+					<p>스타벅스만의 특별한 혜택, <strong>스타벅스 리워드</strong></p>				
+					<p><strong>스타벅스 회원이세요?</strong>로그인을 통해 나만의 리워드를 확인해보세요.</p>
+					<p><strong>스타벅스 회원이 아니세요? </strong>가입을 통해 리워드 혜택을 즐기세요.</p>
+					<ul>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">로그인</a></li>
+					</ul>
+				</div>
+				<div class="giftcard">
+			 		<p>회원 가입 후, 스타벅스 e-Gift Card를 <strong>"나에게 선물하기"로 구매하시고, 편리하게 등록하세요!</strong></p>
+			 		<p>카드를 등록하여 스타벅스 리워드 회원이 되신 후, 첫 구매를 하시면 무료 음료쿠폰을 드립니다!</p>
+			 		<div class="gift-button">
+						<a href="#">e-gift card 선물하기</a>
+					</div>
+			 	</div>
+			</div>
+		</div>
+	</section>
+	<section class="new-beans">
+		<div class="wrap">
+			<img src="images/2022_Summer2_bean_bean_02.png" alt="스타벅스 원두" >
+		</div>
+		<div>
+		<p>드넓은 대양의 상징</p>
+		<p>보야지 블렌드</p>
+		<p>미디움 로스트의 초콜릿과 너츠향이 매력적인 <br>르완다, 페루, 웨스트 자바의 혼합커피 </p>
+		<p class="more">
+					<a href="#">자세히 보기</a>
+		</div>
+	</section>
+	<script src=></script>
 </body>
 </html>
-고객사과문
-FIND YOUR TASTE
-우리 쑥 크림 프라푸치노 with 콜드 브루쿨 서머 캐모마일 블렌디드제주 청귤 라임 에이드
-자세히 보기
-공지사항
-시스템 개선 및 점검 안내
-더보기
-스타벅스 프로모션스타벅스 프로모션 펼쳐보기
-Starbucks Rewards
-스타벅스만의 특별한 혜택, 스타벅스 리워드
-스타벅스 회원이세요? 로그인을 통해 나만의 리워드를 확인해보세요.
-스타벅스 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.
 
-회원가입 로그인
-회원 가입 후, 스타벅스 e-Gift Card를 "나에게 선물하기"로 구매하시고, 편리하게 등록하세요!
-카드를 등록하여 스타벅스 리워드 회원이 되신 후, 첫 구매를 하시면 무료 음료쿠폰을 드립니다!
 
-e-Gift Card 선물하기
-보야지 블렌드 250g드넓은 대양의 상징 보야지 블렌드
-자세히 보기
-INDONESIA WEST JAVA
 
-자세히 보기
-PICK YOUR FAVORITE다양한 메뉴를 스타벅스에서 즐겨보세요. 스타벅스만의 특별함을 경험할 수 있는 최상의 선택 음료, 스타벅스 커피와 완벽한 어울림을 자랑하는 푸드, 다양한 시도와 디자인으로 가치를 더하는 상품, 소중한 사람에게 마음을 전하는 가장 좋은 방법 스타벅스 카드
-자세히 보기
-리저브 매거진에서 일상 속 특별함을 만나보세요.
-자세히 보기
-스타벅스를 가까이에서 경험해보세요. 고객님과 가장 가까이 있는 매장을 찾아보세요!차별화된 커피 경험을 누릴 수 있는 리저브 매장, 다양한 방법으로 편리하게 즐길 수 있는 드라이브 스루 매장, 함께해서 더 따뜻할수 있는 지역사회 소통 공간 커뮤니티 매장
-매장 찾기
-COMPANY
-한눈에 보기
-스타벅스 사명
-스타벅스 소개
-국내 뉴스룸
-세계의 스타벅스
-글로벌 뉴스룸
- 
-CORPORATE SALES
-단체 및 기업 구매 안내
- 
-PARTNERSHIP
-신규 입점 제의
-협력 고객사 등록신청
- 
-ONLINE COMMUNITY
-페이스북
-트위터
-유튜브
-인스타그램
- 
-RECRUIT
-채용 소개
-채용 지원하기
-여섯가족부 2020 대한민국 일자리대상 여성가족부장관상
-행정안전부 2020 소방의 날 행정안전부장관 표창
-농림축산식품부 2020 대한민국 커피산업대상 농림축산식품부 장관상
-산업통상자원부 2020 대한민국 중소중견기업혁신 대상 국회산업통상자원중소벤처위원회장상
-일자리위원회 2020 대한민국 일자리 유공 표창 대통령직속 일자리위원회 부위원장상
-동반성장위원회 2020 사랑나눔 사회공헌대상 동반성장위원회 위원장상
-개인정보처리방침 영상정보처리기기 운영관리 방침 홈페이지 이용약관 위치정보 이용약관 스타벅스 카드 이용약관 비회원 이용약관 My DT Pass 서비스 이용약관 윤리경영 핫라인
-찾아오시는 길 신규입점제의 사이트 맵
-사업자등록번호 : 201-81-21515 주식회사 에스씨케이컴퍼니 대표이사 : 송 데이비드 호섭 TEL : 1522-3232 개인정보 책임자 : 이현수
-ⓒ 2022 Starbucks Coffee Company. All Rights Reserved.
 
-COMPANY
-한눈에 보기
-스타벅스 사명
-스타벅스 소개
-국내 뉴스룸
-세계의 스타벅스
-글로벌 뉴스룸
- 
-CORPORATE SALES
-단체 및 기업 구매 안내
- 
-PARTNERSHIP
-신규 입점 제의
-협력 고객사 등록신청
- 
-ONLINE COMMUNITY
-페이스북
-트위터
-유튜브
-인스타그램
- 
-RECRUIT
-채용 소개
-채용 지원하기
 
-개인정보처리방침 영상정보처리기기 운영관리 방침 홈페이지 이용약관 위치정보 이용약관 스타벅스 카드 이용약관 비회원 이용약관 My DT Pass 서비스 이용약관 윤리경영 핫라인
-찾아오시는 길 신규입점제의 사이트 맵
-사업자등록번호 : 201-81-21515 주식회사 에스씨케이컴퍼니 대표이사 : 송 데이비드 호섭 TEL : 1522-3232 개인정보 책임자 : 이현수
-ⓒ 2022 Starbucks Coffee Company. All Rights Reserved.
